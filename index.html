@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CodeStart — Protótipo Acadêmico</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo"><span>&lt;/&gt;</span> CodeStart</div>
+  <p>Aprenda programação passo a passo</p>
+  <nav>
+    <button onclick="show('dashboard')">⌂ Início</button>
+    <button onclick="show('modules')">▣ Módulos</button>
+    <button onclick="show('lesson')">▤ Aula</button>
+    <button onclick="show('challenge')">⚑ Desafios</button>
+    <button onclick="show('progress')">◔ Meu Progresso</button>
+  </nav>
+</aside>
+<main>
+<section id="login" class="screen active">
+  <div class="login card">
+    <h1><span>&lt;/&gt;</span> CodeStart</h1><p>Entre para continuar seus estudos.</p>
+    <label>E-mail</label><input placeholder="seu@email.com">
+    <label>Senha</label><input type="password" placeholder="••••••••">
+    <button class="primary full" onclick="show('dashboard')">Entrar</button>
+    <small>Protótipo acadêmico — dados fictícios.</small>
+  </div>
+</section>
+
+<section id="dashboard" class="screen">
+  <header><div><h1>Olá, Lucas! 👋</h1><p>Continue aprendendo hoje.</p></div><b>Nível 2 · Iniciante</b></header>
+  <div class="grid">
+    <div class="card"><p>Progresso geral</p><strong>35%</strong><div class="progress"><i style="width:35%"></i></div></div>
+    <div class="card"><p>Desafios realizados</p><strong>12</strong></div>
+    <div class="card"><p>Taxa de acerto</p><strong>85%</strong></div>
+  </div>
+  <div class="card space"><h2>Módulos em andamento</h2>
+    <div class="module"><h3>Lógica de Programação</h3><p>Conceitos fundamentais</p><div class="progress"><i style="width:60%"></i></div>
+    <button class="primary" onclick="show('lesson')">Continuar</button></div>
+  </div>
+</section>
+
+<section id="modules" class="screen">
+<header><div><h1>Módulos de Aprendizagem</h1><p>Siga a ordem e complete os desafios.</p></div></header>
+<div class="module"><h3>1. Introdução à Programação</h3><p>O que é programação, algoritmos e pensamento lógico.</p><b>✓ Concluído</b></div>
+<div class="module"><h3>2. Lógica de Programação</h3><p>Variáveis, operadores e expressões.</p><button class="primary" onclick="show('lesson')">Continuar</button></div>
+<div class="module"><h3>3. Portugol</h3><p>Estruturas condicionais e de repetição.</p><b>Bloqueado</b></div>
+</section>
+
+<section id="lesson" class="screen">
+<header><div><h1>Lógica de Programação</h1><p>Aula 2 de 6 · Variáveis</p></div><b>33%</b></header>
+<div class="columns"><div class="card"><h2>Variáveis</h2><p>As variáveis armazenam informações utilizadas durante a execução do programa.</p>
+<h3>Exemplo em Portugol</h3><pre>var
+  nome: texto
+  idade: inteiro
+  altura: real
+
+início
+  nome &lt;- "Lucas"
+  idade &lt;- 17
+fim</pre>
+<button class="primary" onclick="show('challenge')">Ir para o desafio</button></div>
+<div class="card"><h3>O que você aprendeu?</h3><ul><li>Variáveis</li><li>Tipos de dados</li><li>Atribuição de valores</li></ul></div></div>
+</section>
+
+<section id="challenge" class="screen">
+<header><div><h1>Desafio: Calcular média</h1><p>Lógica de Programação · Desafio 1 de 3</p></div><b>Nível: Fácil</b></header>
+<div class="card"><p>Crie um programa que leia duas notas de um aluno e calcule a média.</p>
+<pre contenteditable="true">var
+  nota1: real
+  nota2: real
+  media: real
+
+início
+  // Escreva seu código aqui
+fim</pre>
+<button class="primary" onclick="show('feedback')">Enviar resposta</button></div>
+</section>
+
+<section id="feedback" class="screen">
+<header><div><h1>Feedback do Desafio</h1><p>Desafio concluído</p></div></header>
+<div class="feedback"><h2>✓ Resposta correta!</h2><p>Parabéns! Seu programa está funcionando corretamente.</p></div>
+<div class="card space"><h3>O que você fez certo:</h3><ul><li>Declarou as variáveis corretamente</li><li>Calculou a média</li><li>Apresentou o resultado</li></ul>
+<button class="primary" onclick="show('progress')">Atualizar meu progresso</button></div>
+</section>
+
+<section id="progress" class="screen">
+<header><div><h1>Meu Progresso</h1><p>Acompanhe sua evolução nos estudos.</p></div></header>
+<div class="card"><h2>Progresso por módulo</h2>
+<p>Introdução à Programação</p><div class="progress"><i style="width:100%"></i></div>
+<p>Lógica de Programação</p><div class="progress"><i style="width:60%"></i></div>
+<p>Portugol</p><div class="progress"><i style="width:0%"></i></div></div>
+</section>
+</main>
+<script src="js/app.js"></script>
+</body></html>
