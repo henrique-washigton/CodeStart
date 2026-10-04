@@ -5,22 +5,16 @@
 <title>CodeStart — Protótipo Acadêmico</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
 <aside class="sidebar">
   <div class="logo"><span>&lt;/&gt;</span> CodeStart</div>
   <p>Aprenda programação passo a passo</p>
   <nav>
-
     <button onclick="show('dashboard')">⌂ Início</button>
     <button onclick="show('modules')">▣ Módulos</button>
     <button onclick="show('lesson')">▤ Aula</button>
     <button onclick="show('challenge')">⚑ Desafios</button>
     <button onclick="show('progress')">◔ Meu Progresso</button>
-    <hr>
-    <button onclick="show('teacher-dashboard')">👨‍🏫 Área do Professor</button>
-
   </nav>
 </aside>
 <main>
@@ -192,6 +186,83 @@ fim</pre>
     <p>Com essas informações, o professor pode identificar conteúdos que precisam de reforço e acompanhar a evolução dos estudantes.</p>
     <button class="primary" onclick="show('teacher-dashboard')">Voltar ao painel</button>
   </div>
+</section>
+
+
+<section id="admin-dashboard" class="screen">
+  <header>
+    <div><h1>Painel do Administrador</h1><p>Gerencie os recursos educacionais do CodeStart.</p></div>
+    <b>Área Administrativa</b>
+  </header>
+
+  <div class="grid">
+    <div class="card"><p>Usuários cadastrados</p><strong>36</strong></div>
+    <div class="card"><p>Módulos</p><strong>8</strong></div>
+    <div class="card"><p>Desafios</p><strong>24</strong></div>
+  </div>
+
+  <div class="grid space">
+    <div class="card admin-card">
+      <h2>📚 Módulos</h2>
+      <p>Organize os módulos e a sequência de aprendizagem.</p>
+      <button class="primary" onclick="show('admin-modules')">Gerenciar módulos</button>
+    </div>
+    <div class="card admin-card">
+      <h2>📖 Conteúdos</h2>
+      <p>Gerencie os conteúdos apresentados nas aulas.</p>
+      <button class="primary" onclick="show('admin-content')">Gerenciar conteúdos</button>
+    </div>
+    <div class="card admin-card">
+      <h2>⚑ Desafios</h2>
+      <p>Crie e organize os desafios de programação.</p>
+      <button class="primary" onclick="show('admin-challenges')">Gerenciar desafios</button>
+    </div>
+  </div>
+</section>
+
+<section id="admin-modules" class="screen">
+  <header>
+    <div><h1>Gerenciamento de Módulos</h1><p>Organize a sequência de aprendizagem.</p></div>
+    <button class="primary" onclick="show('admin-dashboard')">Voltar</button>
+  </header>
+
+  <div class="card">
+    <div class="admin-row"><div><strong>1. Introdução à Programação</strong><p>Fundamentos e pensamento lógico.</p></div><span class="status">Ativo</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>2. Lógica de Programação</strong><p>Variáveis, operadores e expressões.</p></div><span class="status">Ativo</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>3. Portugol</strong><p>Condicionais e estruturas de repetição.</p></div><span class="status">Ativo</span><button class="secondary">Editar</button></div>
+  </div>
+
+  <button class="primary" onclick="alert('Protótipo: criação de módulo simulada.')">+ Novo módulo</button>
+</section>
+
+<section id="admin-content" class="screen">
+  <header>
+    <div><h1>Gerenciamento de Conteúdos</h1><p>Conteúdos disponíveis nas aulas.</p></div>
+    <button class="primary" onclick="show('admin-dashboard')">Voltar</button>
+  </header>
+
+  <div class="card">
+    <div class="admin-row"><div><strong>Variáveis</strong><p>Módulo: Lógica de Programação</p></div><span class="status">Publicado</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>Operadores</strong><p>Módulo: Lógica de Programação</p></div><span class="status">Publicado</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>Estruturas condicionais</strong><p>Módulo: Portugol</p></div><span class="status">Rascunho</span><button class="secondary">Editar</button></div>
+  </div>
+
+  <button class="primary" onclick="alert('Protótipo: criação de conteúdo simulada.')">+ Novo conteúdo</button>
+</section>
+
+<section id="admin-challenges" class="screen">
+  <header>
+    <div><h1>Gerenciamento de Desafios</h1><p>Crie e organize os exercícios de programação.</p></div>
+    <button class="primary" onclick="show('admin-dashboard')">Voltar</button>
+  </header>
+
+  <div class="card">
+    <div class="admin-row"><div><strong>Desafio 01 — Calcular média</strong><p>Lógica de Programação · Fácil</p></div><span class="status">Publicado</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>Desafio 02 — Verificar idade</strong><p>Condicionais · Fácil</p></div><span class="status">Publicado</span><button class="secondary">Editar</button></div>
+    <div class="admin-row"><div><strong>Desafio 03 — Contador</strong><p>Repetição · Médio</p></div><span class="status">Rascunho</span><button class="secondary">Editar</button></div>
+  </div>
+
+  <button class="primary" onclick="alert('Protótipo: criação de desafio simulada.')">+ Novo desafio</button>
 </section>
 
 </main>

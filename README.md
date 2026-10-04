@@ -9,3 +9,6 @@ Protótipo do Projeto Multidisciplinar III — Engenharia de Software.
 **Fluxo do professor:** Área do Professor → Dashboard → Lista de Alunos → Desempenho do Aluno → Dificuldades Identificadas.
 
 Os dados apresentados são fictícios e o sistema é exclusivamente um protótipo acadêmico.
+
+
+**Fluxo do administrador:** Área do Administrador → Dashboard → Gerenciamento de Módulos / Conteúdos / Desafios.

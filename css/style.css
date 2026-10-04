@@ -5,3 +5,5 @@
 .student-row:last-child{border-bottom:0}.student-name{font-size:16px;color:#172033}
 .difficulty{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
 .difficulty b{color:#1d4ed8;font-size:13px}
+
+.admin-card{min-height:190px}.admin-row{display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #e5eaf1}.admin-row:last-child{border-bottom:0}.status{font-size:12px;font-weight:bold;color:#15803d;background:#dcfce7;padding:5px 9px;border-radius:20px}
