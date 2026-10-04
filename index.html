@@ -1,380 +1,749 @@
-\<!doctype html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeStart — Protótipo Acadêmico</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-\<html lang="pt-BR">
 
-\<head>
 
-\<meta charset="UTF-8">\<meta name="viewport" content="width=device-width,initial-scale=1">
 
-\<title>CodeStart — Protótipo Acadêmico\</title>
+\
+<aside class="sidebar">
+  <div class="brand">
+    <div class="logo"><span>&lt;/&gt;</span> CodeStart</div>
+    <p>Aprenda programação passo a passo</p>
+  </div>
 
-\<link rel="stylesheet" href="css/style.css">
+  <nav class="nav-group">
+    <div class="nav-title">ALUNO</div>
+    <button onclick="show('dashboard')">⌂ Início</button>
+    <button onclick="show('modules')">▣ Módulos</button>
+    <button onclick="show('lesson')">▤ Aula</button>
+    <button onclick="show('challenge')">⚑ Desafios</button>
+    <button onclick="show('progress')">◔ Meu Progresso</button>
+  </nav>
 
-\</head>
+  <nav class="nav-group">
+    <div class="nav-title">PROFESSOR</div>
+    <button onclick="show('teacher-dashboard')">▦ Painel do Professor</button>
+    <button onclick="show('teacher-students')">♙ Alunos</button>
+    <button onclick="show('teacher-performance')">◒ Desempenho</button>
+    <button onclick="show('teacher-difficulties')">⚠ Dificuldades</button>
+  </nav>
 
-\<body>
+  <nav class="nav-group">
+    <div class="nav-title">ADMINISTRAÇÃO</div>
+    <button onclick="show('admin-dashboard')">⚙ Painel Administrativo</button>
+    <button onclick="show('admin-modules')">▣ Módulos</button>
+    <button onclick="show('admin-content')">▤ Conteúdos</button>
+    <button onclick="show('admin-challenges')">⚑ Desafios</button>
+  </nav>
 
-\<aside class="sidebar">
+  <div class="sidebar-note">
+    <strong>Protótipo acadêmico</strong>
+    <span>Dados e usuários fictícios.</span>
+  </div>
+</aside>
 
-  \<div class="logo">\<span>&lt;/&gt;\</span> CodeStart\</div>
 
-  \<p>Aprenda programação passo a passo\</p>
 
-  \<nav>
 
-    \<button onclick="show('dashboard')">⌂ Início\</button>
+\
+<div class="prototype-bar">
+  <span>CodeStart · Protótipo acadêmico</span>
+  <div class="profile-actions">
+    <button onclick="show('login')">Aluno</button>
+    <button onclick="show('teacher-dashboard')">Professor</button>
+    <button onclick="show('admin-dashboard')">Administrador</button>
+  </div>
+</div>
 
-    \<button onclick="show('modules')">▣ Módulos\</button>
+<main>
 
-    \<button onclick="show('lesson')">▤ Aula\</button>
 
-    \<button onclick="show('challenge')">⚑ Desafios\</button>
-
-    \<button onclick="show('progress')">◔ Meu Progresso\</button>
-
-  \</nav>
-
-\</aside>
-
-\<main>
 
 \<section id="login" class="screen active">
 
+
+
   \<div class="login card">
+
+
 
     \<h1>\<span>&lt;/&gt;\</span> CodeStart\</h1>\<p>Entre para continuar seus estudos.\</p>
 
+
+
     \<label>E-mail\</label>\<input placeholder="seu\@email.com">
+
+
 
     \<label>Senha\</label>\<input type="password" placeholder="••••••••">
 
+
+
     \<button class="primary full" onclick="show('dashboard')">Entrar\</button>
+
+
 
     \<small>Protótipo acadêmico — dados fictícios.\</small>
 
+
+
   \</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="dashboard" class="screen">
 
+
+
   \<header>\<div>\<h1>Olá, Lucas! 👋\</h1>\<p>Continue aprendendo hoje.\</p>\</div>\<b>Nível 2 · Iniciante\</b>\</header>
+
+
 
   \<div class="grid">
 
+
+
     \<div class="card">\<p>Progresso geral\</p>\<strong>35%\</strong>\<div class="progress">\<i style="width:35%">\</i>\</div>\</div>
+
+
 
     \<div class="card">\<p>Desafios realizados\</p>\<strong>12\</strong>\</div>
 
+
+
     \<div class="card">\<p>Taxa de acerto\</p>\<strong>85%\</strong>\</div>
 
+
+
   \</div>
+
+
 
   \<div class="card space">\<h2>Módulos em andamento\</h2>
 
+
+
     \<div class="module">\<h3>Lógica de Programação\</h3>\<p>Conceitos fundamentais\</p>\<div class="progress">\<i style="width:60%">\</i>\</div>
+
+
 
     \<button class="primary" onclick="show('lesson')">Continuar\</button>\</div>
 
+
+
   \</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="modules" class="screen">
 
+
+
 \<header>\<div>\<h1>Módulos de Aprendizagem\</h1>\<p>Siga a ordem e complete os desafios.\</p>\</div>\</header>
+
+
 
 \<div class="module">\<h3>1. Introdução à Programação\</h3>\<p>O que é programação, algoritmos e pensamento lógico.\</p>\<b>✓ Concluído\</b>\</div>
 
+
+
 \<div class="module">\<h3>2. Lógica de Programação\</h3>\<p>Variáveis, operadores e expressões.\</p>\<button class="primary" onclick="show('lesson')">Continuar\</button>\</div>
+
+
 
 \<div class="module">\<h3>3. Portugol\</h3>\<p>Estruturas condicionais e de repetição.\</p>\<b>Bloqueado\</b>\</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="lesson" class="screen">
 
+
+
 \<header>\<div>\<h1>Lógica de Programação\</h1>\<p>Aula 2 de 6 · Variáveis\</p>\</div>\<b>33%\</b>\</header>
+
+
 
 \<div class="columns">\<div class="card">\<h2>Variáveis\</h2>\<p>As variáveis armazenam informações utilizadas durante a execução do programa.\</p>
 
+
+
 \<h3>Exemplo em Portugol\</h3>\<pre>var
+
+
 
   nome: texto
 
+
+
   idade: inteiro
+
+
 
   altura: real
 
 
 
+
+
+
+
 início
+
+
 
   nome &lt;- "Lucas"
 
+
+
   idade &lt;- 17
+
+
 
 fim\</pre>
 
+
+
 \<button class="primary" onclick="show('challenge')">Ir para o desafio\</button>\</div>
+
+
 
 \<div class="card">\<h3>O que você aprendeu?\</h3>\<ul>\<li>Variáveis\</li>\<li>Tipos de dados\</li>\<li>Atribuição de valores\</li>\</ul>\</div>\</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="challenge" class="screen">
 
+
+
 \<header>\<div>\<h1>Desafio: Calcular média\</h1>\<p>Lógica de Programação · Desafio 1 de 3\</p>\</div>\<b>Nível: Fácil\</b>\</header>
+
+
 
 \<div class="card">\<p>Crie um programa que leia duas notas de um aluno e calcule a média.\</p>
 
+
+
 \<pre contenteditable="true">var
+
+
 
   nota1: real
 
+
+
   nota2: real
+
+
 
   media: real
 
 
 
+
+
+
+
 início
+
+
 
   // Escreva seu código aqui
 
+
+
 fim\</pre>
+
+
 
 \<button class="primary" onclick="show('feedback')">Enviar resposta\</button>\</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="feedback" class="screen">
 
+
+
 \<header>\<div>\<h1>Feedback do Desafio\</h1>\<p>Desafio concluído\</p>\</div>\</header>
+
+
 
 \<div class="feedback">\<h2>✓ Resposta correta!\</h2>\<p>Parabéns! Seu programa está funcionando corretamente.\</p>\</div>
 
+
+
 \<div class="card space">\<h3>O que você fez certo:\</h3>\<ul>\<li>Declarou as variáveis corretamente\</li>\<li>Calculou a média\</li>\<li>Apresentou o resultado\</li>\</ul>
+
+
 
 \<button class="primary" onclick="show('progress')">Atualizar meu progresso\</button>\</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="progress" class="screen">
 
+
+
 \<header>\<div>\<h1>Meu Progresso\</h1>\<p>Acompanhe sua evolução nos estudos.\</p>\</div>\</header>
+
+
 
 \<div class="card">\<h2>Progresso por módulo\</h2>
 
+
+
 \<p>Introdução à Programação\</p>\<div class="progress">\<i style="width:100%">\</i>\</div>
+
+
 
 \<p>Lógica de Programação\</p>\<div class="progress">\<i style="width:60%">\</i>\</div>
 
+
+
 \<p>Portugol\</p>\<div class="progress">\<i style="width:0%">\</i>\</div>\</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="teacher-dashboard" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Olá, Professor! 👋\</h1>\<p>Acompanhe o desempenho dos seus alunos.\</p>\</div>
 
+
+
     \<b>Área do Professor\</b>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="grid">
+
+
 
     \<div class="card">\<p>Alunos cadastrados\</p>\<strong>32\</strong>\</div>
 
+
+
     \<div class="card">\<p>Alunos ativos\</p>\<strong>28\</strong>\</div>
+
+
 
     \<div class="card">\<p>Média de desempenho\</p>\<strong>78%\</strong>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<div class="card space">
 
+
+
     \<h2>Visão geral da turma\</h2>
+
+
 
     \<p>O acompanhamento permite identificar alunos com dificuldades e observar a evolução ao longo dos módulos.\</p>
 
+
+
     \<button class="primary" onclick="show('teacher-students')">Ver alunos\</button>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<div class="card">
 
+
+
     \<h3>Conteúdos com maior dificuldade\</h3>
+
+
 
     \<ul>
 
+
+
       \<li>Operadores e expressões — 38% de erros\</li>
+
+
 
       \<li>Variáveis — 24% de erros\</li>
 
+
+
       \<li>Estruturas condicionais — 19% de erros\</li>
+
+
 
     \</ul>
 
+
+
   \</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="teacher-students" class="screen">
 
+
+
   \<header>
 
+
+
     \<div>\<h1>Lista de Alunos\</h1>\<p>Consulte o progresso e o desempenho individual.\</p>\</div>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="card">
+
+
 
     \<div class="student-row">\<div>\<strong class="student-name">Lucas Almeida\</strong>\<p>Progresso: 60% · Acertos: 85%\</p>\</div>\<button class="primary" onclick="show('teacher-performance')">Ver desempenho\</button>\</div>
 
+
+
     \<div class="student-row">\<div>\<strong class="student-name">Mariana Costa\</strong>\<p>Progresso: 48% · Acertos: 72%\</p>\</div>\<button class="secondary" onclick="show('teacher-performance')">Ver desempenho\</button>\</div>
+
+
 
     \<div class="student-row">\<div>\<strong class="student-name">João Pedro\</strong>\<p>Progresso: 82% · Acertos: 91%\</p>\</div>\<button class="secondary" onclick="show('teacher-performance')">Ver desempenho\</button>\</div>
 
+
+
     \<div class="student-row">\<div>\<strong class="student-name">Ana Beatriz\</strong>\<p>Progresso: 35% · Acertos: 61%\</p>\</div>\<button class="secondary" onclick="show('teacher-performance')">Ver desempenho\</button>\</div>
+
+
 
   \</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="teacher-performance" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Desempenho do Aluno\</h1>\<p>Lucas Almeida · 17 anos · Iniciante\</p>\</div>
 
+
+
   \</header>
+
+
+
+
 
 
 
   \<div class="grid">
 
+
+
     \<div class="card">\<p>Progresso geral\</p>\<strong>60%\</strong>\<div class="progress">\<i style="width:60%">\</i>\</div>\</div>
+
+
 
     \<div class="card">\<p>Desafios realizados\</p>\<strong>12\</strong>\</div>
 
+
+
     \<div class="card">\<p>Taxa de acerto\</p>\<strong>85%\</strong>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<div class="columns space">
 
+
+
     \<div class="card">
+
+
 
       \<h2>Evolução por módulo\</h2>
 
+
+
       \<p>Introdução à Programação\</p>\<div class="progress">\<i style="width:100%">\</i>\</div>
+
+
 
       \<p>Lógica de Programação\</p>\<div class="progress">\<i style="width:60%">\</i>\</div>
 
+
+
       \<p>Portugol\</p>\<div class="progress">\<i style="width:15%">\</i>\</div>
 
+
+
     \</div>
+
+
 
     \<div class="card">
 
+
+
       \<h2>Principais dificuldades\</h2>
+
+
 
       \<ul>
 
+
+
         \<li>Operadores\</li>
+
+
 
         \<li>Expressões\</li>
 
+
+
         \<li>Estruturas condicionais\</li>
+
+
 
       \</ul>
 
+
+
     \</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<button class="primary" onclick="show('teacher-difficulties')">Ver dificuldades da turma\</button>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="teacher-difficulties" class="screen">
 
+
+
   \<header>
 
+
+
     \<div>\<h1>Dificuldades Identificadas\</h1>\<p>Conteúdos que apresentam maior índice de erros.\</p>\</div>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="card">
 
+
+
     \<div class="difficulty">\<div>\<strong>Operadores e expressões\</strong>\<p>38% de respostas incorretas\</p>\</div>\<b>Alta atenção\</b>\</div>
+
+
 
     \<div class="progress">\<i style="width:38%">\</i>\</div>
 
 
 
+
+
+
+
     \<div class="difficulty">\<div>\<strong>Variáveis\</strong>\<p>24% de respostas incorretas\</p>\</div>\<b>Atenção\</b>\</div>
+
+
 
     \<div class="progress">\<i style="width:24%">\</i>\</div>
 
 
 
+
+
+
+
     \<div class="difficulty">\<div>\<strong>Estruturas condicionais\</strong>\<p>19% de respostas incorretas\</p>\</div>\<b>Atenção\</b>\</div>
+
+
 
     \<div class="progress">\<i style="width:19%">\</i>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<div class="card space">
 
+
+
     \<h2>Acompanhamento\</h2>
+
+
 
     \<p>Com essas informações, o professor pode identificar conteúdos que precisam de reforço e acompanhar a evolução dos estudantes.\</p>
 
+
+
     \<button class="primary" onclick="show('teacher-dashboard')">Voltar ao painel\</button>
+
+
 
   \</div>
 
+
+
 \</section>
+
+
+
+
+
+
 
 
 
@@ -382,158 +751,317 @@ fim\</pre>
 
 \<section id="admin-dashboard" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Painel do Administrador\</h1>\<p>Gerencie os recursos educacionais do CodeStart.\</p>\</div>
 
+
+
     \<b>Área Administrativa\</b>
 
+
+
   \</header>
+
+
+
+
 
 
 
   \<div class="grid">
 
+
+
     \<div class="card">\<p>Usuários cadastrados\</p>\<strong>36\</strong>\</div>
+
+
 
     \<div class="card">\<p>Módulos\</p>\<strong>8\</strong>\</div>
 
+
+
     \<div class="card">\<p>Desafios\</p>\<strong>24\</strong>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<div class="grid space">
 
+
+
     \<div class="card admin-card">
+
+
 
       \<h2>📚 Módulos\</h2>
 
+
+
       \<p>Organize os módulos e a sequência de aprendizagem.\</p>
+
+
 
       \<button class="primary" onclick="show('admin-modules')">Gerenciar módulos\</button>
 
+
+
     \</div>
 
+
+
     \<div class="card admin-card">
+
+
 
       \<h2>📖 Conteúdos\</h2>
 
+
+
       \<p>Gerencie os conteúdos apresentados nas aulas.\</p>
+
+
 
       \<button class="primary" onclick="show('admin-content')">Gerenciar conteúdos\</button>
 
+
+
     \</div>
+
+
 
     \<div class="card admin-card">
 
+
+
       \<h2>⚑ Desafios\</h2>
+
+
 
       \<p>Crie e organize os desafios de programação.\</p>
 
+
+
       \<button class="primary" onclick="show('admin-challenges')">Gerenciar desafios\</button>
+
+
 
     \</div>
 
+
+
   \</div>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="admin-modules" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Gerenciamento de Módulos\</h1>\<p>Organize a sequência de aprendizagem.\</p>\</div>
 
+
+
     \<button class="primary" onclick="show('admin-dashboard')">Voltar\</button>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="card">
+
+
 
     \<div class="admin-row">\<div>\<strong>1. Introdução à Programação\</strong>\<p>Fundamentos e pensamento lógico.\</p>\</div>\<span class="status">Ativo\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
     \<div class="admin-row">\<div>\<strong>2. Lógica de Programação\</strong>\<p>Variáveis, operadores e expressões.\</p>\</div>\<span class="status">Ativo\</span>\<button class="secondary">Editar\</button>\</div>
+
+
 
     \<div class="admin-row">\<div>\<strong>3. Portugol\</strong>\<p>Condicionais e estruturas de repetição.\</p>\</div>\<span class="status">Ativo\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<button class="primary" onclick="alert('Protótipo: criação de módulo simulada.')">+ Novo módulo\</button>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="admin-content" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Gerenciamento de Conteúdos\</h1>\<p>Conteúdos disponíveis nas aulas.\</p>\</div>
 
+
+
     \<button class="primary" onclick="show('admin-dashboard')">Voltar\</button>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="card">
+
+
 
     \<div class="admin-row">\<div>\<strong>Variáveis\</strong>\<p>Módulo: Lógica de Programação\</p>\</div>\<span class="status">Publicado\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
     \<div class="admin-row">\<div>\<strong>Operadores\</strong>\<p>Módulo: Lógica de Programação\</p>\</div>\<span class="status">Publicado\</span>\<button class="secondary">Editar\</button>\</div>
+
+
 
     \<div class="admin-row">\<div>\<strong>Estruturas condicionais\</strong>\<p>Módulo: Portugol\</p>\</div>\<span class="status">Rascunho\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
   \</div>
+
+
+
+
 
 
 
   \<button class="primary" onclick="alert('Protótipo: criação de conteúdo simulada.')">+ Novo conteúdo\</button>
 
+
+
 \</section>
+
+
+
+
 
 
 
 \<section id="admin-challenges" class="screen">
 
+
+
   \<header>
+
+
 
     \<div>\<h1>Gerenciamento de Desafios\</h1>\<p>Crie e organize os exercícios de programação.\</p>\</div>
 
+
+
     \<button class="primary" onclick="show('admin-dashboard')">Voltar\</button>
+
+
 
   \</header>
 
 
 
+
+
+
+
   \<div class="card">
+
+
 
     \<div class="admin-row">\<div>\<strong>Desafio 01 — Calcular média\</strong>\<p>Lógica de Programação · Fácil\</p>\</div>\<span class="status">Publicado\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
     \<div class="admin-row">\<div>\<strong>Desafio 02 — Verificar idade\</strong>\<p>Condicionais · Fácil\</p>\</div>\<span class="status">Publicado\</span>\<button class="secondary">Editar\</button>\</div>
 
+
+
     \<div class="admin-row">\<div>\<strong>Desafio 03 — Contador\</strong>\<p>Repetição · Médio\</p>\</div>\<span class="status">Rascunho\</span>\<button class="secondary">Editar\</button>\</div>
+
+
 
   \</div>
 
 
 
+
+
+
+
   \<button class="primary" onclick="alert('Protótipo: criação de desafio simulada.')">+ Novo desafio\</button>
+
+
 
 \</section>
 
 
 
+
+
+
+
 \</main>
+
+
 
 \<script src="js/app.js">\</script>
 
-\</body>\</html>
+
+
+\
+</main>
+</body>
+</html>

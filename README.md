@@ -1,21 +1,21 @@
 # CodeStart — Protótipo Acadêmico
 
-Protótipo do Projeto Multidisciplinar III — Engenharia de Software.
+Protótipo acadêmico do Projeto Multidisciplinar III — Engenharia de Software.
 
 ## Perfis
 - Aluno
 - Professor
 - Administrador
 
+## Observação
+Os dados, usuários e instituição apresentados no protótipo são fictícios e destinados exclusivamente ao trabalho acadêmico.
+
 ## Fluxos
 Aluno: Login → Dashboard → Módulos → Aula → Desafio → Feedback → Progresso.
 
 Professor: Painel → Alunos → Desempenho → Dificuldades.
 
-Administrador: Painel Administrativo → Módulos → Conteúdos → Desafios.
+Administrador: Painel → Módulos → Conteúdos → Desafios.
 
-## Tecnologias
-HTML5, CSS3 e JavaScript.
-
-## Observação
-Dados fictícios e funcionalidades simuladas exclusivamente para fins acadêmicos.
+## Execução
+Abra `index.html` no navegador ou publique o projeto em uma hospedagem estática, como o Vercel.
