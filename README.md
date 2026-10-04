@@ -2,13 +2,20 @@
 
 Protótipo do Projeto Multidisciplinar III — Engenharia de Software.
 
-**Tecnologias:** HTML5, CSS3 e JavaScript.
+## Perfis
+- Aluno
+- Professor
+- Administrador
 
-**Fluxo do aluno:** Login → Dashboard → Módulos → Aula → Desafio → Feedback → Progresso.
+## Fluxos
+Aluno: Login → Dashboard → Módulos → Aula → Desafio → Feedback → Progresso.
 
-**Fluxo do professor:** Área do Professor → Dashboard → Lista de Alunos → Desempenho do Aluno → Dificuldades Identificadas.
+Professor: Painel → Alunos → Desempenho → Dificuldades.
 
-Os dados apresentados são fictícios e o sistema é exclusivamente um protótipo acadêmico.
+Administrador: Painel Administrativo → Módulos → Conteúdos → Desafios.
 
+## Tecnologias
+HTML5, CSS3 e JavaScript.
 
-**Fluxo do administrador:** Área do Administrador → Dashboard → Gerenciamento de Módulos / Conteúdos / Desafios.
+## Observação
+Dados fictícios e funcionalidades simuladas exclusivamente para fins acadêmicos.
